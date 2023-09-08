@@ -1,0 +1,15 @@
+mkdir Mywebappdir 
+cd Mywebappdir
+dotnet new
+dotnet new webapp
+dotnet build
+dotnet run \bin\Debug\net7.0\Mywebappdir.dll
+dotnet publish -c release
+create a new dockerfile in root folder in vs code.and update it withbelow code.
+
+	FROM mcr.microsoft.com/dotnet/aspnet:7.0
+	RUN mkdir app
+	WORKDIR /app
+	COPY ./bin/release/net7.0/publish .
+	EXPOSE 88
+	ENTRYPOINT ["Mywebappdir.dll"]
