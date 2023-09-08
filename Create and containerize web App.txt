@@ -1,5 +1,5 @@
 Install docker desktop
-Install visulstudio
+Install VScode
 
 mkdir Mywebappdir 
 cd Mywebappdir
