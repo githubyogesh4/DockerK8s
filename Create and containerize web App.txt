@@ -1,3 +1,6 @@
+Install docker desktop
+Install visulstudio
+
 mkdir Mywebappdir 
 cd Mywebappdir
 dotnet new
